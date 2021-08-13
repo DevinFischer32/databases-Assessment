@@ -10,4 +10,15 @@ def sales_reports(log_file):          # This is called a list allows us to call 
 
 
 sales_reports(log_file)              #calling the list to run it 
+
+#===================================================================================#
+#In process.py, write another function that prints out all the melon orders that delivered over 10 melons.
+def melon_orders(log_file):
+    for line in log_file:
+        line = line.rstrip().split()  # removes unwanted and breaks each space into a new string 
+        melon = line[2]               # this makes the varible melon equal line index 2
+        if int(melon) > 10:           # int makes the string a interger
+            print(melon)
+
+melon_orders(log_file)
 log_file.close()                     #This closes the file after it is ran

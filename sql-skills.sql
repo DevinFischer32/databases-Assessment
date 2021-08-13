@@ -81,3 +81,6 @@ SELECT c.first_name "Customer First Name", c.last_name "Customer Last Name", e.f
 --Question 4 
 SELECT al.title "Album Title" , a.name "Artist"  FROM artist a
 JOIN album al ON a.artist_id = al.artist_id
+
+
+
